@@ -10,8 +10,8 @@ class Benchmarking():
         tarea = lambda: self.mOrdenamiento.sortByBubble(arreglo)
         tiempoMillis = self.contar_con_current_time_miles(tarea)
         tiempoNano = self.contar_con_nano_time(tarea)
-        print('Tiempo de ejecucion con current_time_millis: ', tiempoMillis, 'ms')
-        print('Tiempo de ejecucion con nano_time: ', tiempoNano, 'ns')
+        print('Tiempo de ejecucion con current_time_millis: ', tiempoMillis, 'ms ')
+        print('Tiempo de ejecucion con nano_time: ', tiempoNano, 'ns ')
         
     def build_arreglo(self, size):
         array = []
