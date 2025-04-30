@@ -8,7 +8,7 @@ public class Benchmarking {
         //System.out.println(inicioMillis);
         //System.out.println(inicioNano);
         metodosOrdenamiento = new MetodosOrdenamiento();
-        int [] arreglo = generaArregloAleatorio(10000);
+        int [] arreglo = generaArregloAleatorio(1000000000);
         Runnable tarea = () -> metodosOrdenamiento.burbujaTradicional(arreglo);
         double tiempoNano = medirConNanoTime(tarea);
         System.out.println("Tiempo: " + tiempoNano + " segundos");
@@ -23,7 +23,7 @@ public class Benchmarking {
         for(int j = 0; j < i; j++){
             arreglo[j] = random.nextInt(i);
         }
-        return new int[]{};
+        return arreglo;
     }
 
     //Tiempo usando nanoTime
